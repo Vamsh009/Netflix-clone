@@ -13,7 +13,7 @@ body{
   background-position: center center;
   background-repeat: no-repeat;
   background-size: max(1500px, 100vw);
-  height: 100vh;
+  height: 80vh;
   position: relative;
 
 }
@@ -21,7 +21,7 @@ body{
 .main .box {
   position: absolute;
   top: 0;
-  height: 100%;
+  height: 80vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   opacity: 0.88;
@@ -65,37 +65,43 @@ nav button {
 
 .hero {
   display: flex;
-  height: 100%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  color: #fff;
+  color: #f5f1f1;
   position: relative;
   z-index: 5;
-  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif
-   
-
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+  padding: 0 30px; /* Add some padding for spacing on smaller screens */
 }
 
 .hero> :first-child {
   font-weight: 900;
   font-size: 56px;
-  margin-top: 100px;
+  margin-top: 175px;
+  text-align: center;
+  /* Removed margin-top: 100px; */
 }
+
+
 .hero> :nth-child(2) {
    font-weight: 900;
   font-size: 56px;
+  text-align: center;
 }
 .hero> :nth-child(3) {
   font-size: 20px;
   margin: 18px 0;
   font-weight: 500;
+  text-align: center;
 }
+/* Remove or adjust the bottom margin on the spans to bring the input closer */
 .hero> :nth-child(4) {
   font-size: 16px;
-  margin-bottom: 190px;
   font-weight: 400;
+  margin-bottom: 20px;
+  text-align: center; /* Adjusted from 190px */
 }
 
 input{
@@ -110,5 +116,6 @@ input{
 
 .separation{
   height: 11px;
-  background-color: rgb(225, 215, 215);
+  background-color: rgb(73, 72, 72);
 }
+
