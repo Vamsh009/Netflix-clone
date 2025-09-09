@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-body{
+body {
   background-color: black;
 }
 
@@ -14,6 +14,7 @@ body{
   background-repeat: no-repeat;
   background-size: max(1500px, 100vw);
   height: 80vh;
+  opacity: 0.85;
   position: relative;
 
 }
@@ -24,7 +25,7 @@ body{
   height: 80vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  opacity: 0.88;
+  opacity: 0.98;
 }
 
 nav {
@@ -34,9 +35,9 @@ nav {
   padding: 20px;
   height: 66px;
   max-width: 80vw;
-  margin:auto;
+  margin: auto;
 
-  
+
 }
 
 nav img {
@@ -44,8 +45,7 @@ nav img {
   width: 130px;
   position: relative;
   z-index: 5;
-  padding: 20px 0 
- 
+  padding: 20px 23px
 }
 
 
@@ -65,6 +65,7 @@ nav button {
 
 .hero {
   display: flex;
+  height: calc(100%-62px);
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -73,7 +74,8 @@ nav button {
   position: relative;
   z-index: 5;
   font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
-  padding: 0 30px; /* Add some padding for spacing on smaller screens */
+  padding: 0 30px;
+  /* Add some padding for spacing on smaller screens */
 }
 
 .hero> :first-child {
@@ -86,25 +88,28 @@ nav button {
 
 
 .hero> :nth-child(2) {
-   font-weight: 900;
+  font-weight: 900;
   font-size: 56px;
   text-align: center;
 }
+
 .hero> :nth-child(3) {
   font-size: 20px;
   margin: 18px 0;
   font-weight: 500;
   text-align: center;
 }
+
 /* Remove or adjust the bottom margin on the spans to bring the input closer */
 .hero> :nth-child(4) {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 20px;
-  text-align: center; /* Adjusted from 190px */
+  text-align: center;
+  /* Adjusted from 190px */
 }
 
-input{
+input {
   padding: 15px;
   width: 450px;
   max-width: 80vw;
@@ -114,8 +119,55 @@ input{
 }
 
 
-.separation{
+.separation {
   height: 11px;
   background-color: rgb(73, 72, 72);
 }
 
+.btn {
+  padding: 3px 10px;
+  font-weight: bold;
+  background-color: white;
+
+}
+
+.btnrnd {
+  padding: 8px 16px;
+  background-color: #e50914;
+  border: none;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+.btnsmd {
+  padding: 16px 40px;
+  background-color: #e50914;
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 8px;
+  font-weight: bolder;
+  margin-left: 7px;
+}
+
+.main input{
+  padding: 16px 40px;
+  font-size: 20px;
+  border-color: white;
+  border-radius: 5px;
+  background-color: rgba(20, 20, 20, 0.6);
+  
+}
+
+.main input::placeholder {
+  color: white;
+  opacity: 0.8;
+  position: relative;
+  z-index: 5;
+}
