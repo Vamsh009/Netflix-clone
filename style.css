@@ -63,6 +63,11 @@ nav button {
   font-weight: 500;
 }
 
+nav > div {
+  display: flex;
+  gap: 8px; /* Adds a small gap between the two buttons */
+}
+
 @media screen and (max-width: 600px) {
   nav img {
     width: 100px;
@@ -70,10 +75,27 @@ nav button {
   }
 
   nav button {
-    padding: 4px 8px;
-    font-size: 14px;
+    padding: 4px 8px; /* Reduced padding for both buttons */
+    font-size: 14px; /* Reduced font size for both buttons */
   }
-  
+
+  /* Specific styles for the "English" button */
+  .btnmrd {
+    padding: 6px 10px; /* Adjust padding to be less wide */
+    font-size: 16px;
+  }
+
+  /* Specific styles for the "Sign In" button */
+  .btnrnd {
+    padding: 6px 12px;
+    font-size: 16px;
+  }
+}
+
+nav button:hover {
+  background-color: #fff;
+  color: black;
+  transition: 0.3s;
 }
 
 .hero {
