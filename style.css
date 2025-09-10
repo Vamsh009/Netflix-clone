@@ -63,6 +63,19 @@ nav button {
   font-weight: 500;
 }
 
+@media screen and (max-width: 600px) {
+  nav img {
+    width: 100px;
+    padding: 10px 15px;
+  }
+
+  nav button {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+  
+}
+
 .hero {
   display: flex;
   height: calc(100%-62px);
@@ -188,7 +201,7 @@ input {
   z-index: 5;
 }
 
-.more{
+.more {
   background-color: black;
   color: white;
   text-align: left;
@@ -198,36 +211,209 @@ input {
   top: 0;
   margin: auto;
   max-width: 80vw;
+
+}
+
+
+/* Styling for the section title */
+.sec-title {
+  color: #fff;
+  font-size: 2.5rem;
+  /* Adjust as needed */
+  font-weight: 700;
+  margin-left: 10vw;
+  /* Align with the cards */
+  margin-bottom: 20px;
+  margin-top: 50px;
+  /* Add some space from above */
+}
+
+.sec1 {
+  display: flex;
+  justify-content: center;
+  /* Centers the row of cards */
+  flex-wrap: wrap;
+  /* Allows cards to wrap on smaller screens */
+  gap: 20px;
+  /* Space between cards */
+  padding: 0 5vw;
+  /* Padding on the sides of the container */
+  max-width: 1200px;
+  /* Max width for the entire row of cards */
+  margin: 0 auto 50px auto;
+  /* Centers the container and adds bottom margin */
+}
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  /* Stacks content vertically */
+  justify-content: space-between;
+  /* Pushes text to top, image to bottom */
+  width: 280px;
+  /* Fixed width for each card as per the image */
+  min-height: 400px;
+  /* Minimum height to accommodate content and image */
+  background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+  border-radius: 12px;
+  /* Slightly more rounded corners */
+  padding: 30px;
+  /* Internal padding for content */
+  box-sizing: border-box;
+  /* Include padding in the width calculation */
+  color: #fff;
+  /* Ensure text is white */
+  text-align: left;
+  /* Align text to the left */
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+.card1 .cardtxt {
+  /* No specific styles needed here, its children handle it */
+  margin-bottom: 20px;
+  /* Space between text and image */
+}
+
+.card1 .txtl1 {
+  font-size: 1.5rem;
+  /* Larger title font size */
+  font-weight: 700;
+  margin-bottom: 10px;
+  /* Space between title and description */
+}
+
+.card1 .txtl2 {
+  font-size: 1rem;
+  /* Description font size */
+  line-height: 1.5;
+  /* Better readability */
+  color: rgba(255, 255, 255, 0.7);
+  /* Lighter color for description */
+}
+
+.card-icon {
+  width: 100%;
+  /* Make icon responsive to card width */
+  max-width: 80px;
+  /* Max width for the icon */
+  height: auto;
+  /* Maintain aspect ratio */
+  display: block;
+  /* Remove extra space below image */
+  margin: 15px 0;
+  /* Center the icon horizontally within the card */
+  background: radial-gradient(343deg, #1737b4 0%, #903a62 56.86%);
+}
+
+/* Optional: Add a responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+  .sec1 {
+    padding: 0 20px;
+  }
+
+  .card1 {
+    width: 100%;
+    /* Cards take full width on small screens */
+    max-width: 350px;
+    /* Max width for individual card on small screens */
+    margin-bottom: 20px;
+    /* Space between cards when stacked */
+  }
+
+  .sec-title {
+    margin-left: 20px;
+    font-size: 2rem;
+  }
+}
+
+
+.faq {
+  background-color: black;
+  color: white;
+  text-align: left;
+  padding: 10px 10px;
+  font-size: 24px;
+  font-weight: 400;
+  top: 0;
+  margin: 34px auto;
+  max-width: 80vw;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+.boxz {
+  transition: all 0.3s ease-out;
+  display: flex;
+  background-color: rgb(49, 47, 47);
+  padding: 24px;
+  justify-content: space-between;
+  margin: 12px 0;
+  
+  cursor: pointer;
+}
+
+.boxz svg{
+  filter: invert(1);
+}
+
+.boxz:hover {
+  background-color: rgb(101, 100, 100);
+}
+
+.footer-item{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap:20px;
+  padding:40px;
+  background-color: black;
+  color: gray;
+  font-size: 14px;
+  max-width: 80vw;
+  margin:auto;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+  margin-bottom: 40px;
+  gap: 10px;
+}
+
+footer a{
+  color: gray;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.footer-links{
+  display: flex;
+  flex-direction: column;
+}
+
+footer span{
+  margin: 2px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  color: gray;
+  position: relative;
+  text-align: center;
+}
+
+footer{
+  max-width: 60vw;
+  margin: auto;
+
+}
+
+@media  screen and (max-width: 600px) {
+  .footer-item{
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+    padding:20px;
+  }
   
 }
 
-
-.card1{
-  display: flex;
-  align-items: left;
-  justify-content: left; 
-  gap: 10px;
-  padding: 20px 0;
-  height: 100px;
-  width: 60vh;
-  margin: auto;
-  background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
-}
-
-.cardtxt{
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin: 10px 0;
+.language{
+   padding: 3px 10px;
+  font-weight: bold;
+  background-color: rgba(20, 20, 20, 0.6);
+  border: 1px solid white;
   color: white;
-  text-align: left;
-  width :400px;
-}
-.txtl1{
-  font-size: 2rem;
-  font-weight: 400;
-  color: rgb(255, 255, 255);
-  text-align: left;
-  position: relative;
-  z-index: 5;
-
 }
